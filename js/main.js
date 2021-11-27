@@ -1,14 +1,113 @@
-// ==============================slider home=====================================
-// $(document).ready(function() {
-//     $(".skitter-large").skitter({
-//         with_animations:["circlesRotate","directionRight","blind","block"],
-        
-//         interval:1000,
-       
-//     });
-    
-//   });
 
+
+// ==============================slider home=====================================
+ $(document).ready(function() {
+   $(".skitter-large").skitter({
+        with_animations:["circlesRotate","directionRight","blind","block"],
+        
+         interval:1000,
+       
+    });
+    
+  });
+/////Declaring variables///
+var bestProduct=document.getElementById("bestProduct");
+var saleProduct = document.getElementById("saleProduct");
+var lastProduct=document.getElementById("lastProduct");
+var searchInput=document.getElementById("searchInput");
+var bstSction=document.getElementById("BstProduct");
+/////////handling buttons event/////
+ bestProduct.addEventListener("click",getBstProduct);
+ lastProduct.addEventListener("click", getlastProduct);
+  saleProduct.addEventListener("click", getSaleProduct);
+//////////
+  /*Best product function*/ 
+ var BstProduct=["imges/image4.jpg","imges/image7.jpg","imges/image9.jpg","imges/image10.jpg","imges/image11.jpg","imges/image12.jpg"];
+ function getBstProduct(){
+    
+     var col="";      
+      for(var i=0;i<BstProduct.length;i++){
+         col+=
+       `
+      <div class="col-md-4 py-4 ">
+           <div class="card rounded birthday">
+               <img src="${BstProduct[i]}" class="card-img-top w-100 "alt="BstProductGifts">
+             <div class="card-body ">
+                  <h6>name</h4>
+                  <h6>price</h4>
+                  <h6>rev</h4>
+             </div>
+            </div>
+      </div>
+          `
+ }
+       document.getElementById("rowData").innerHTML=col;
+      
+ }
+//////////////
+/*sale product function */
+  var saleProduct=["imges/imge1.jpg","imges/image5.jpg","imges/image8.jpg","imges/image21.jpg","imges/25 (2).jpg","imges/27.jpg"];
+  function getSaleProduct(){
+         var col="";
+      for(var i=0;i<saleProduct.length;i++){
+         
+          col+=
+
+          `
+            <div class="col-md-4 py-4 ">
+           <div class="card rounded " >              
+            <img src="${saleProduct[i]}" class="card-img-top w-100"alt="SaleProductgifts">
+              <div class="card-body ">
+                  <h6>name</h4>
+                  <h6>price</h4>
+                 <h6>rev</h4>
+              
+             </div>
+             </div> 
+     </div>           `
+ 
+ 
+          
+}
+      document.getElementById("rowData").innerHTML=col;
+     
+  
+ }
+//last product function//
+ var lastProduct=["imges/33.jpg","imges/image3.jpg","imges/image14.jpg","imges/image13.jpg","imges/image16.jpg","imges/image17.jpg"];
+ function getlastProduct(){
+     
+    var col="";
+      for(var i=0;i<lastProduct.length;i++){
+         
+          col+=`
+
+          <div class="col-md-4 py-4 ">
+          <div class="card rounded ">
+              <img src="${lastProduct[i]}" class="card-img-top w-100"alt="lastProductGifts">
+              <div class="card-body ">
+                  <h6>name</h4>
+                  <h6>price</h4>
+                  <h6>rev</h4>
+              
+              </div>
+            </div> 
+      </div>
+          ` 
+        }
+      document.getElementById("rowData").innerHTML=col;
+      
+    
+ }
+
+ getSaleProduct();
+ getBstProduct();
+ getlastProduct();
+ //subImage section//
+$(".sub-images").click(function(){
+  let currentSrc=  $(this).attr("src");
+  $(".main-image").attr("src",currentSrc);
+})
 
 // ===============owl carosule(her)=================================================================
 
