@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="#">
+                <img src="images/nav.png" class="img-fluid pb-2" alt="">
+                Giftery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto px-5  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fontColor2" href="HimHer.html">For Him</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fontColor2" href="HimHer.html">For Her</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fontColor2" href="kids.html">For Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form d-flex justify-content-center">
+                <div class="Input-search  ">
+
+                    <input onkeyup="search(this.value)" placeholder='Enter your occassion'
+                        class="form-control me-2 rounded-pill  " id="searchInput" type="search" aria-label="Search">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+<section>
+    <div class="container mt-5">
+        <table class="w-100 " id="big">
+
+            <tr id="ftr">
+                <th></th>
+                <th class="text-center">product</th>
+                <th>price</th>
+                <th>quantity</th>
+                <th>total price</th>
+            </tr>
+        </table>
+
+        <div class="d-flex justify-content-end costStyle pt-3">
+            <p class="fw-bold pe-3">total Cost:</p><span id="cost"></span>
+        </div>
+    </div>
+</section>
+
+
+
+    <!--footer-->
+    <footer class="bg-light py-3 overflow-hidden ps-3 footercart">
+        <div class="">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="ourGiftry-info ">
+                        <a class="footer-brand text-decoration-none" href="#">
+                            <img src="images/nav.png" class="img-fluid pb-2" alt="">
+                            Giftery</a>
+                        <p class="ps-5 footer-caption"> Find your gift</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feedback-input justify-content-center  mt-3">
+                        <input class="form-control rounded-pill h-auto py-2 bg-light btn-outline-danger  " type="text"
+                            placeholder="Enter your feedback">
+                        <div class="send"><button class="btn btn-outline-light   rounded-pill ">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-icons d-flex justify-content-center align-items-center mt-3 ">
+                        <span>you can contact us on :</span>
+                        <i class="fab fa-facebook mx-2 fs-5"></i>
+                        <i class="fab fa-twitter mx-2 fs-5"></i>
+                        <i class="fab fa-instagram-square mx-2 fs-5"></i>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+
+    <script src="js/cart.js"> </script>
+
+</body>
+
+</html>

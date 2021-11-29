@@ -1,0 +1,153 @@
+body {
+  background-color: #ddf3f7;
+}
+                                /* occasion page */
+#occasion .parag p {
+    color: #176a75;
+    font-size: 18px;
+}
+#occasion h4 {
+    color: #176a75;
+    font-family: "Flavors", cursive;
+}
+
+#occasion .container-fluid h3 {
+    font-family: "Flavors", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    border-bottom: 1px solid #ebaec5;
+    color: #2c6975;
+}
+#occasion .container .brdr{
+  color: violet;
+}
+#occasion .container h3 {
+  font-family: "Flavors", cursive;
+  font-weight: 500;
+  font-size: 50px;
+  color: #2c6975;
+}
+#occasion .container-fluid .row img {
+    height: 170px;
+    transition: all 0.6s;
+}
+#occasion .more-imgs {
+    display: none;
+}
+#occasion #moreBtn  {
+    font-family: "Flavors", cursive;
+    font-weight: 300;
+    font-size: 20px;
+    color: #2c6975;
+    background-color: #8ea3a8;
+}
+#occasion .container .occasion-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+#occasion .container .occasion-img:hover .img-layer {
+    opacity: 1;
+}
+#occasion .container .occasion-img:hover img {
+    transform: scale(1.2);
+}
+#occasion .container .img-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.5s;
+}
+#occasion .container .occasion-img:hover .img-layer i {
+    cursor: pointer;
+}
+#occasion .container .img-layer i {
+    color: #fff;
+}
+
+
+
+
+                                /* filter */
+.container-fluid .filter {
+  height: 1000px;
+  background-color: rgb(248, 212, 212);
+  width: 90%;
+}
+.container-fluid .filter h2 {
+  color: #2c6975;
+  font-family: "Flavors", cursive;
+}
+.container-fluid .filter button {
+  background-color: rgb(202, 179, 172);
+  margin: 5px 0;
+}
+.container-fluid .filter-container img {
+  height: 170px;
+  transition: all 0.6s;
+}
+.container-fluid .filter-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.container-fluid .filter-img:hover .fImg-layer {
+  opacity: 1;
+}
+.container-fluid .filter-img:hover img {
+  transform: scale(1.2);
+}
+.container-fluid .fImg-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.container-fluid .filter-img:hover .fImg-layer i {
+  cursor: pointer;
+}
+#occasion .container-fluid .fImg-layer i {
+  color: #fff;
+}
+
+                                    /*  her/him carousel */
+.img-area img {
+  width: 100%;
+  border-radius: 50%;
+}
+.product-card {
+  background-color: #fff;
+  padding: 10%;
+  text-align: center;
+  border-radius: 50px 0;
+}
+.product-card h4 {
+  text-transform: uppercase;
+  margin: 20px 0px 5px;
+  color: #3a8892;
+  font-size: 18px;
+}
+.product-card h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #ddd !important;
+  opacity: 0.8;
+  margin: 50px 3px 5px;
+}
+.owl-dot.active {
+  background-color: #fff !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  display: none !important;
+}

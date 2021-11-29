@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#home{
+    height: 650;
+   background-image: url(../img/j1].jpg);
+   background-size: 100% 100%;
+  
+  position: relative;
+}
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.layer{
+    text-align: center;
+  padding-top: 200px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+.fixed{
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+background-color: turquoise;
+z-index: 99;
+padding-left: 30px;
+padding-top: 30px;
+padding-right: 100px;
+}
+
+.Link{
+   
+}
+.fixed a{
+   
+    text-decoration: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.fixed ul{
+    padding: 0;
+    list-style: none;
+}
+.fixed ul li{
+    padding-top:20px ;
+    padding-bottom:20px ;
+}
+

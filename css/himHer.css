@@ -1,0 +1,60 @@
+body {
+  background-color: #f7f2f8;
+}
+                        /* Him/Her  */
+#him-her .occasion-container img{
+  border-radius: 50%;
+  width: 80%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+#him-her .occasion-container{
+  text-align: center;
+}
+#him-her .occasion-container a{
+  color: #2c6975;
+  font-family: "Flavors", cursive;
+  font-size: 20px;
+}
+#him-her h3{
+    font-family: "Flavors", cursive;
+    font-size: 40px;
+    color: #2c6975;
+}
+            /* main  & sub images*/
+#him-her img{
+  cursor: pointer;
+}
+#him-her .brdr{
+  color: #2c6975; 
+}
+#him-her .para-gift {
+  top: 3%;
+  right: 15%;
+  width: 350px;
+}
+#him-her .para-gift p{
+  background-color: rgb(222, 209, 243);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50px 0;
+
+}
+.main-image{
+  width: 60%;
+  border-radius: 50% 0;
+  border: 1px solid #85cfe6 ;
+}
+.sub-images {
+  width: 20%;
+  float: left;
+  height: 15%;
+  border-radius: 10%;
+  padding: 15px 15px;
+}
+                            /* create your box */
+#him-her .container .box-img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
