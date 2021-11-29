@@ -11,13 +11,19 @@ body {
   width: 100%;
   z-index: 999;
   font-family: 'Tangerine', cursive !important;
+  font-size: 30px;
 }
 .fontSize
 {
   font-size: 50px!important;
 }
-.fontStyle{
-  font-family: 'Tangerine', cursive;
+
+
+
+
+.fontStyle2{
+  font-family: "Flavors", cursive !important;
+
 }
 .fontColor{
   color:#fff;
@@ -283,8 +289,8 @@ ul.count{
 
 
 /* section of blog*/
-#home{
-  font-family: 'Tangerine', cursive;
+#home h2 , #home h5{
+  font-family: "Flavors", cursive !important;
   
 }
 .rowBlog{
